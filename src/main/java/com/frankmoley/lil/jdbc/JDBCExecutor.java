@@ -31,7 +31,6 @@ public class JDBCExecutor {
             dbCustomer = customerDAO.update(dbCustomer);
             System.out.println(dbCustomer);
             customerDAO.delete(dbCustomer.getId());
-
         }catch(SQLException e){
             e.printStackTrace();
         }
